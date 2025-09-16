@@ -72,3 +72,24 @@ button:hover {
 .social-links img:hover {
   transform: scale(1.1);
 }
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #f8f8f8;
+  margin-top: 30px;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  margin-top: 10px;
+}
+
+.social-links img {
+  transition: transform 0.2s ease-in-out;
+}
+
+.social-links img:hover {
+  transform: scale(1.1);
+}
