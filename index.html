@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>PawfectBabies Cattery</title>
+<meta name="description" content="PawfectBabies – TICA-registered cattery specializing in Scottish Fold and Maine Coon kittens. Healthy, affectionate kittens ready for loving homes.">
+<meta name="keywords" content="Scottish Fold, Maine Coon, kittens, cattery, pets, PawfectBabies">
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+<style>
+body {margin:0; font-family:'Roboto',sans-serif; background:#fffdfd; color:#333;}
+header {background:#fff; border-bottom:2px solid #ff69b4; padding:10px 20px; display:flex; align-items:center; justify-content:space-between;}
+header img {height:60px;}
+header nav a {margin:0 10px; text-decoration:none; color:#333; font-weight:500;}
+header nav a:hover {color:#ff1493;}
+/* Slideshow */
+.slideshow-container {position:relative; max-width:1000px; margin:auto; overflow:hidden;}
+.slide {display:none;}
+.slide img {width:100%; border-bottom:5px solid #ff69b4;}
+.slide-caption {position:absolute; bottom:20px; left:50%; transform:translateX(-50%); background:rgba(0,0,0,0.6); color:white; padding:12px 20px; border-radius:5px; font-size:1rem; text-align:center;}
+.active {display:block;}
+/* Sections */
+.section {width:90%; max-width:1000px; margin:50px auto; padding:20px;}
+.section h2 {text-align:center; color:#ff1493; margin-bottom:20px;}
+.about, .breeder, .specialties, .contact, .cta {background:#fff; padding:20px; border-radius:8px; box-shadow:0 0 15px rgba(0,0,0,0.05); margin-bottom:40px;}
+/* Cards */
+.specialties-cards {display:flex; flex-wrap:wrap; justify-content:center; gap:20px;}
+.specialty-card {width:300px; background:#fff0f5; padding:15px; border-radius:10px; text-align:center; box-shadow:0 0 10px rgba(0,0,0,0.05); transition:0.3s; cursor:pointer;}
+.specialty-card:hover {transform:scale(1.05); box-shadow:0 0 20px rgba(0,0,0,0.1);}
+.specialty-card img {width:100%; border-radius:8px; margin-bottom:10px;}
+button {background:#ff69b4; color:white; border:none; padding:12px 20px; border-radius:5px; cursor:pointer; font-size:1rem; margin-top:10px;}
+button:hover {background:#ff1493;}
+/* Trust Badges */
+.badges {display:flex; justify-content:center; gap:20px; margin:20px 0;}
+.badge {background:#ffe4f1; border:2px solid #ff69b4; border-radius:50px; padding:10px 20px; font-weight:bold; color:#ff1493;}
+/* Contact + Socials */
+.contact p, .cta p {text-align:center; font-size:1.1rem;}
+.socials {text-align:center; margin-top:15px;}
+.socials a {margin:0 10px; font-size:1.5rem; color:#ff69b4; text-decoration:none;}
+.socials a:hover {color:#ff1493;}
+footer {text-align:center; background:#333; color:white; padding:20px;}
+/* Responsive */
+@media(max-width:768px){.specialties-cards {flex-direction:column; align-items:center;} header{flex-direction:column;}}
+</style>
+</head>
+<body>
+
+<!-- Header -->
+<header>
+  <img src="images/logo.png" alt="PawfectBabies Logo"class="logo">
+  <h1>Welcome to Pawfectbabies Cattery</h1>
+  <p>TICA-registered cattery specializing in Scottish Fold and Maine Coon kittens.  
+     Dedicated to ethical breeding and raising well-socialized, healthy kittens.</p>
+  <nav>
+    <a href="#about">About</a>
+    <a href="#kittens">Kittens</a>
+    <a href="#breeder">Breeder</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<!-- Slideshow -->
+<div class="slideshow-container">
+  <div class="slide active">
+    <img src="images/kitten1.jpg" alt="Kitten 1">
+    <div class="slide-caption">Meet Snowball – Scottish Fold, 10 weeks old</div>
+  </div>
+  <div class="slide">
+    <img src="images/kitten2.jpg" alt="Kitten 2">
+    <div class="slide-caption">Luna – Gentle Maine Coon, 12 weeks old</div>
+  </div>
+  <div class="slide">
+    <img src="images/kitten3.jpg" alt="Kitten 3">
+    <div class="slide-caption">Oliver – Playful Scottish Fold, 11 weeks old</div>
+  </div>
+</div>
+
+<!-- Welcome Section -->
+<div class="section cta">
+  <h1>Welcome to PawfectBabies Cattery</h1>
+  <p>TICA-registered cattery specializing in Scottish Fold and Maine Coon kittens. Every kitten is healthy, well-socialized, and raised with love. Browse available kittens or reserve your perfect companion today!</p>
+  <div class="badges">
+    <div class="badge">TICA Registered</div>
+    <div class="badge">Health Guaranteed</div>
+    <div class="badge">Family Raised</div>
+  </div>
+  <div style="text-align:center;">
+    <button onclick="document.getElementById('kittens').scrollIntoView({behavior:'smooth'})">Available Kittens</button>
+    <button onclick="document.getElementById('contact').scrollIntoView({behavior:'smooth'})">Contact Us</button>
+  </div>
+</div>
+<section class="kittens">
+  <h2>🐾 Available Kittens</h2>
+  <p>Browse our current litters and find your new best friend. All kittens are raised in a family environment and come with health guarantees.</p>
+
+  <div class="kitten-grid">
+    <!-- kitten 1 -->
+    <div class="kitten-card">
+      <img src="images/kitten1.jpg" alt="Scottish Fold Kitten">
+      <h3>Luna – Scottish Fold</h3>
+      <p>Sweet, affectionate, and playful. Perfect companion for families.</p>
+       <a href="https://script.google.com/macros/s/AKfycbyabeJuMazbEOCYR34wur7pKViz4fV5xKH_yOtcGidmE_H81AiloJb-58b5I7bsGhVpcw/exec" 
+     target="_blank" class="apply-btn">
+     Apply Now
+  </a>
+</div>
+
+    <!-- kitten 2 -->
+    <div class="kitten-card">
+      <img src="images/kitten2.jpg" alt="Maine Coon Kitten">
+      <h3>Max – Maine Coon</h3>
+      <p>Gentle giant with a curious spirit. Loves to cuddle and explore.</p>
+     <a href="https://script.google.com/macros/s/AKfycbyabeJuMazbEOCYR34wur7pKViz4fV5xKH_yOtcGidmE_H81AiloJb-58b5I7bsGhVpcw/exec" 
+     target="_blank" class="apply-btn">
+     Apply Now
+  </a>
+</div>
+
+    <!-- kitten 3 -->
+    <div class="kitten-card">
+      <img src="images/kitten3.jpg" alt="Scottish Fold Kitten">
+      <h3>Bella – Scottish Fold</h3>
+      <p>Calm, sweet, and loyal. She’ll instantly melt your heart.</p>
+     <a href="https://script.google.com/macros/s/AKfycbyabeJuMazbEOCYR34wur7pKViz4fV5xKH_yOtcGidmE_H81AiloJb-58b5I7bsGhVpcw/exec" 
+     target="_blank" class="apply-btn">
+     Apply Now
+  </a>
+</div>
+  </div>
+</section>
+
+<!-- About -->
+<div class="section about" id="about">
+  <h2>About PawfectBabies</h2>
+  <p>At Pawfectbabies Cattery,we dedicated to ethical breeding and raising well-socialized, healthy kittens. Our mission is to bring joy and companionship to families with our adorable Scottish Fold and Maine Coon kittens. we believe every family deserves the joy of a healthy, well-socialized, and truly exceptional kitten. As a TICA-registered cattery, we specialize in breeding Scottish Fold and Maine Coon kittens with the highest standards of care, ethics, and love.
+We proudly reside in Knoxville, Tennessee, and New York, allowing us to serve a wide community of pet lovers. Whether you are nearby or across the country, we offer nationwide delivery as well as convenient local delivery within our cities and state. Our goal is to make bringing home your perfect kitten a seamless and joyful experience.
+Our breeding program is guided by a deep commitment to the health, temperament, and happiness of our kittens. Each one is raised in a warm, family-oriented environment, receiving daily interaction, socialization, and plenty of affection. All of our cats are carefully screened for genetic conditions, receive routine veterinary care, and are nurtured with premium nutrition.
+At Pawfectbabies, we don’t just raise kittens — we raise lifelong companions. When you choose one of our kittens, you’re not only welcoming a pet into your home but also joining our extended family. We provide ongoing guidance and support to ensure your journey as a pet parent is rewarding and worry-free.
+✨ Our Promise: A healthy, happy, and loving kitten delivered safely to your home, ready to fill your life with warmth and joy.</p>
+</div>
+
+<!-- Available Kittens -->
+<div class="section" id="kittens">
+  <h2>Available Kittens</h2>
+  <div class="specialties-cards">
+    <div class="specialty-card">
+      <img src="images/kitten1.jpg" alt="Snowball">
+      <h3>Snowball</h3>
+      <p>Playful and affectionate Scottish Fold, ready for a loving home.</p>
+      <button>Reserve Now</button>
+    </div>
+    <div class="specialty-card">
+      <img src="images/kitten2.jpg" alt="Luna">
+      <h3>Luna</h3>
+      <p>Gentle and cuddly Maine Coon, great with children and pets.</p>
+      <button>Reserve Now</button>
+    </div>
+    <div class="specialty-card">
+      <img src="images/kitten3.jpg" alt="Oliver">
+      <h3>Oliver</h3>
+      <p>Curious and playful Scottish Fold, loves to explore and play.</p>
+      <button>Reserve Now</button>
+    </div>
+  </div>
+</div>
+<section class="cats">
+  <h2>🐾 Meet Our Cats</h2>
+  <p>Our breeding cats are carefully selected for their health, temperament, and beauty.  
+     They are cherished members of our family.</p>
+
+  <div class="cat-grid">
+    <div class="cat-card">
+      <img src="images/breeder1.jpg" alt="Scottish Fold Queen">
+      <h3>Cleo – Scottish Fold Queen</h3>
+      <p>Elegant and affectionate. Loves lounging and watching over her kittens.</p>
+    </div>
+
+    <div class="cat-card">
+      <img src="images/breeder2.jpg" alt="Maine Coon King">
+      <h3>Leo – Maine Coon King</h3>
+      <p>Strong and majestic. Known for his friendly, dog-like personality.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Meet Breeder -->
+<div class="section breeder" id="breeder">
+  <h2>Meet Courtney, Our Passionate Breeder</h2>
+  <p>Hi! I'm Courtney, owner and breeder behind PawfectBabies Cattery in Knoxville and Miami. My passion for Scottish Fold and Maine Coon cats drives me to ensure every kitten is raised responsibly, healthy, and socialized. I continually expand my knowledge in cat breeding, behavior, and nutrition to provide the best care for my kittens.</p>
+</div>
+
+<!-- Specialties -->
+<div class="section specialties">
+  <h2>Our Specialties</h2>
+  <div class="specialties-cards">
+    <div class="specialty-card">
+      <img src="images/scottishfold.jpg" alt="Scottish Fold">
+      <h3>Scottish Fold Kittens</h3>
+      <p>Known for their folded ears and sweet temperament. Gentle, affectionate, and perfect family pets.</p>
+    </div>
+    <div class="specialty-card">
+      <img src="images/mainecoon.jpg" alt="Maine Coon">
+      <h3>Maine Coon Kittens</h3>
+      <p>America's largest domestic cat breed. Gentle giants, playful, intelligent, and excellent with children.</p>
+    </div>
+  </div>
+</div>
+
+<!-- Contact -->
+<div class="section contact" id="contact">
+  <h2>Contact Us</h2>
+  <p>📞 +1 904-638-2581 | +1 612-643-8495<br>📧 pawfectbabies0@gmail.com</p>
+  <div class="socials">
+    <a href="#" title="Instagram">📸</a>
+    <a href="#" title="Facebook">📘</a>
+    <a href="#" title="TikTok">🎵</a>
+  </div>
+</div>
+
+<!-- Footer -->
+<footer>
+  <p>&copy; 2025 PawfectBabies Cattery | TICA Registered | All Rights Reserved</p>
+</footer>
+
+<script>
+// Simple slideshow
+let slideIndex = 0;
+function showSlides() {
+  let slides = document.getElementsByClassName("slide");
+  for (let i=0;i<slides.length;i++){ slides[i].style.display="none"; }
+  slideIndex++;
+  if(slideIndex>slides.length){slideIndex=1;}
+  slides[slideIndex-1].style.display="block";
+  setTimeout(showSlides,5000);
+}
+showSlides();
+</script>
+
+</body>
+</html>
