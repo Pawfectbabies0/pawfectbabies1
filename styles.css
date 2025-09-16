@@ -60,3 +60,15 @@ button {
 button:hover {
   background: #e95b4f;
 }
+.social-links {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 20px;
+}
+.social-links img {
+  transition: transform 0.2s ease-in-out;
+}
+.social-links img:hover {
+  transform: scale(1.1);
+}
